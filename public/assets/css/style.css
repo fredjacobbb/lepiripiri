@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Signika:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap");
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.fs-0 {
+  font-size: 2.5em;
+  color: orange;
+}
+
+.bg-secondary {
+  background-color: #fe8017;
+}
+
+.text-third {
+  color: rgb(249, 27, 11);
+}
+
+ul {
+  padding: 0 !important;
+}
+
+h2 {
+  font-family: "Londrina Shadow";
+}
+
+.container-icons-menu {
+  position: relative;
+  z-index: 9999;
+}
+.container-icons-menu .bi {
+  position: relative;
+  color: #fd5122;
+  clip-path: circle();
+  background-color: rgb(253, 253, 250);
+  padding: 0.13em;
+}
+
+nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(228, 225, 225, 0.8);
+  z-index: 999;
+}
+nav ul li {
+  background-color: rgba(228, 225, 225, 0.8);
+  list-style: none;
+  color: #fd5122;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.2em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fd5122;
+  font-family: "Pacifico";
+  font-weight: 300;
+  font-style: normal;
+}
+
+header {
+  background-color: #fe8017;
+  overflow-x: hidden;
+}
+header img {
+  background-color: whitesmoke;
+  border-radius: 100%;
+  width: 10rem;
+  max-width: 60%;
+  animation: rotate-brand 3s;
+}
+header .offset-canvas {
+  transform: translateX(100%);
+  transition: transform 0.5s;
+}
+header .offset-canvas.open {
+  transform: translateX(0);
+}
+
+.banner-home {
+  background-color: rgba(0, 0, 0, 0.662);
+  height: 100%;
+}
+.banner-home h2 {
+  font-size: 1.5rem;
+  color: white !important;
+}
+
+footer {
+  background-color: #fe8017;
+}
+
+@media (width > 767px) {
+  body header {
+    background-color: #fe8017;
+    height: auto;
+  }
+  body header img {
+    width: 17rem;
+    max-width: 130px;
+  }
+  body header nav {
+    background-color: #fe8017;
+    height: auto;
+  }
+  body header nav ul {
+    margin: 0;
+  }
+  body header nav ul li {
+    font-size: 1.12rem;
+  }
+  body header nav ul li a {
+    color: rgb(255, 255, 255);
+  }
+  body .banner-home h2 {
+    font-size: 3.5rem;
+    color: white !important;
+  }
+}
+@keyframes rotate-brand {
+  0% {
+    transform: rotate(0);
+    translate: -200px;
+  }
+  100% {
+    transform: rotate(360deg);
+    translate: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
