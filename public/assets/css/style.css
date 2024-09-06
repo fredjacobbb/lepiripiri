@@ -1,9 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Signika:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html, body {
-  width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
+}
+
+.bg-danger {
+  background-color: #e64c3c;
+}
+
+.bg-secondary {
+  background-color: #fe8017 !important;
+}
+
+.text-yellow {
+  color: #f0c419;
+}
+
+.bg-yellow {
+  background-color: #f0c419;
+}
+
+.text-danger {
+  color: #e64c3c;
+}
+
+.text-success {
+  color: #4c8056;
+}
+
+.bg-success {
+  background-color: #4c8056;
 }
 
 .fs-0 {
@@ -24,7 +53,13 @@ ul {
 }
 
 h2 {
-  font-family: "Londrina Shadow";
+  font-family: "Roboto";
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: "Londrina Solid";
+  border: 7px solid #212529;
 }
 
 .container-icons-menu {
@@ -86,7 +121,6 @@ header .offset-canvas.open {
 }
 .banner-home h2 {
   font-size: 1.5rem;
-  color: white !important;
 }
 
 footer {
@@ -115,9 +149,14 @@ footer {
   body header nav ul li a {
     color: rgb(255, 255, 255);
   }
+  body h3 {
+    font-size: 5rem;
+  }
+  body video {
+    height: 50% !important;
+  }
   body .banner-home h2 {
     font-size: 3.5rem;
-    color: white !important;
   }
 }
 @keyframes rotate-brand {
